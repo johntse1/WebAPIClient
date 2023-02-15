@@ -32,7 +32,7 @@ namespace WebAPIClient
         [JsonProperty("name")]
         public string? Name { get; set; }
     }
-        public class Types
+    public class Types
     {
         [JsonProperty("type")]
         public Type? type;
@@ -61,12 +61,14 @@ namespace WebAPIClient
                     var resultRead = await result.Content.ReadAsStringAsync();
                     var pokemon = JsonConvert.DeserializeObject<Pokemon>(resultRead);
 
+                    Console.WriteLine(pokemon);
+
                     Console.WriteLine("---");
                     Console.WriteLine("Pokemon #" + pokemon.Id);
-                    Console.WriteLine("Name" + pokemon.Name);
-                    Console.WriteLine("Weight" + pokemon.Weight + "lb");
-                    Console.WriteLine("Height" + pokemon.Height + "ft");
-                    Console.WriteLine("Type(s):");
+                    Console.WriteLine("Name: " + pokemon.Name);
+                    Console.WriteLine("Weight: " + pokemon.Weight + "lb");
+                    Console.WriteLine("Height: " + pokemon.Height + "ft");
+                    Console.WriteLine("Type(s): ");
                     pokemon.Types.ForEach(t => Console.Write(" " + t.type.Name));
                     Console.WriteLine("\n---");
 
