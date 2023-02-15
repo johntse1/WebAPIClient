@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "l8o7mf+w4InbM28LcydrcfetRTwpqfTFWXB0/LnPUOGTmhfAVR0XI/nZ4Cnpa5yugnw36QUIYzgF4U2nwP+vEA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\John\\WebAPIClient\\WebAPIClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\John\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
